@@ -1,0 +1,20 @@
+{
+  "name": "responsive-web-design-i",
+  "version": "1.0.0",
+  "description": "It's time to expand our CSS skills into multiple devices.  You will be creating an adaptive version of the \"Great Idea\" design. You will be working through design mock ups for desktop, tablet, and mobile devices located in the [design-files](design-files) folder.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamConnatser/responsive-web-design-I.git"
+  },
+  "author": "William Connatser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WilliamConnatser/responsive-web-design-I/issues"
+  },
+  "homepage": "https://github.com/WilliamConnatser/responsive-web-design-I#readme"
+}
