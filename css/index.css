@@ -164,10 +164,29 @@ body {
 }
 
 .container {
+    padding: 0 2rem;
     max-width: 88rem;
     margin: 3rem auto;
     font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 500px) {
+
+    .container {
+        max-width: 50rem;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .container {
+        max-width: 80rem;
+    }
+}
+
+
 
 /* sticky nav */
 .sticky {
@@ -202,6 +221,33 @@ body {
 
 @media only screen and (max-width: 500px) {
 
+    .nav-grouping {
+        flex-direction: column;
+    }
+
+    .nav-element {
+        width: 100%;
+        border-top: .2rem solid black;
+        padding: 2rem 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-element:last-child {
+        border-bottom: .2rem solid black;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .nav-grouping {
+        margin: 3rem 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: white;
+    }
+
     .nav-element {
         margin: .5rem;
         text-align: center;
@@ -209,9 +255,37 @@ body {
     }
 }
 
-.logo {
+.small-screen-logo {
+    display: none;
+}
+
+.large-screen-logo {
     margin-left: 2.5rem;
     height: 3.7rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .small-screen-logo {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .large-screen-logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .small-screen-logo {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .large-screen-logo {
+        display: none;
+    }
 }
 
 .header-section {
@@ -220,6 +294,12 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .header-section {
+        justify-content: center;
+    }
 }
 
 .half-page-block {
@@ -249,6 +329,12 @@ body {
 
 .circle-img {
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+    .circle-img {
+        display: none;
+    }
 }
 
 .half-page-block-bottom {
