@@ -227,14 +227,14 @@ body {
 
     .nav-element {
         width: 100%;
-        border-top: .2rem solid black;
+        border-bottom: .1rem solid black;
         padding: 2rem 0;
         margin: 0;
         text-align: center;
     }
 
-    .nav-element:last-child {
-        border-bottom: .2rem solid black;
+    .nav-element:first {
+        border-top: .1rem solid black;
     }
 }
 
@@ -242,48 +242,55 @@ body {
 
     .nav-grouping {
         margin: 3rem 0;
-        display: flex;
         justify-content: space-around;
-        align-items: center;
-        background: white;
     }
 
     .nav-element {
         margin: .5rem;
-        text-align: center;
         display: block;
     }
 }
 
-.small-screen-logo {
+@media only screen and (max-width: 500px) {
+
+    .nav-grouping {
+        margin: 0;
+    }
+}
+
+.tablet-logo, .mobile-logo {
     display: none;
 }
 
-.large-screen-logo {
+.desktop-logo {
     margin-left: 2.5rem;
     height: 3.7rem;
 }
 
 @media only screen and (max-width: 800px) {
 
-    .small-screen-logo {
+    .tablet-logo {
         margin: 0 auto;
         display: block;
     }
 
-    .large-screen-logo {
+    .desktop-logo {
         display: none;
     }
 }
 
 @media only screen and (max-width: 500px) {
 
-    .small-screen-logo {
+    .mobile-logo {
         margin: 0 auto;
         display: block;
     }
 
-    .large-screen-logo {
+    .tablet-logo {
+        display: none;
+    }
+
+    .desktop-logo {
         display: none;
     }
 }
@@ -352,9 +359,23 @@ body {
     height: 20rem;
 }
 
+@media only screen and (max-width: 500px) {
+    .middle-img {
+        padding: 0 2rem;
+        height: 15rem;
+    }
+}
+
 .information {
     display: flex;
     justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 500px) {
+    .information {
+        display: block;
+        padding: 3rem 2rem;
+    }
 }
 
 .third-page-block {
@@ -367,6 +388,12 @@ body {
 
 .footer {
     margin: 3rem 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .footer {
+        padding: 1rem 2rem;
+    }
 }
 
 .address-element {
