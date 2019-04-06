@@ -1,0 +1,9 @@
+{
+    "client": "true",
+    "client_root": "/",
+    "client_entry_point": "index.html",
+    "client_build": "false",
+    "server": "false",
+    "server_root": "/",
+    "server_entry_point": "index.js"
+}
