@@ -1,9 +1,10 @@
 {
     "client": "true",
-    "client_root": "/",
-    "client_entry_point": "index.html",
-    "client_build": "false",
+    "clientRoot": "/",
+    "clientEntry": "index.html",
+    "clientBuild": "false",
+    "clientBuildEntry": "/dist",
     "server": "false",
-    "server_root": "/",
-    "server_entry_point": "index.js"
+    "serverRoot": "/",
+    "serverEntry": "index.js"
 }
